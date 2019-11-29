@@ -1,0 +1,54 @@
+.suggest-item {
+    padding: 4px 15px;
+    display: flex;
+    border-bottom: 1px solid #f5f5f5;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+    
+    &:hover {
+        cursor: pointer;
+        background: #D6E7F4;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0;
+
+        span {
+            font-weight: normal;
+            margin-left: 5px;
+        }
+    }
+
+    &__poster {
+        width: 30px;
+        height: 43px;
+        background-color: #ddd;
+    }
+
+    &__info {
+        padding: 2px 8px;
+        flex: 1;
+        overflow: hidden;
+
+        b {
+            float: right;
+            font-size: 0.8em;
+            font-weight: normal;
+            color: $buddha-gold;
+        }
+
+        p {
+            margin: 4px 0 0;
+            font-size: 0.8em;
+            color: #666;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+        }
+    }
+}
